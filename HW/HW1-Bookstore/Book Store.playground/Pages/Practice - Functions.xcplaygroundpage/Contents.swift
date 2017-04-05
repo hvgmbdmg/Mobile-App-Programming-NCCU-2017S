@@ -49,8 +49,10 @@ let books: [[String: String]] = [
     ["author": "J.K. Rowling", "title": "Harry Potter and the Half-Blood Prince", "price": "12.99"],
     ["author": "J.K. Rowling", "title": "Harry Potter and the Deathly Hallows", "price": "14.99"],
     ["author": "詹宏志", "title": "旅行與讀書", "price": "12.00"],
-    ["author": "王宣一", "title": "國宴與家宴", "price": "7.99"],
+    ["author": "王宣一", "title": "國宴與家宴", "price": "7.99"]
 ]
+
+//books.count
 
 /*
 books.count
@@ -157,9 +159,10 @@ func getBook(at index: Int) -> (title: String, author: String, price: Double)? {
 
 //getBook(at: 1)
 
-//getBook(at: 0)
+//getBook(at: 9)
 
 bookStore.setDataSource(bookGetter: getBook(at:))
+
 
 //Double(books[1]["price"]!);
 //books[1]["author"];
