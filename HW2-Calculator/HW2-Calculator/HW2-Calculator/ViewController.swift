@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var previousNumber:Double = 0;
     var performingMath = false;
     var operation = 0;
+    var decimalNumber = false;
+    //var stupid = false;
     
     @IBOutlet weak var display: UILabel!
     
@@ -23,17 +25,45 @@ class ViewController: UIViewController {
             display.text = "";
             performingMath = false;
         }
+        
+        
+        display.text = display.text! + String(sender.tag - 1000)
+
+        //Decimal Number Part
+        /*
         if sender.tag != 1010 //Point
         {
             display.text = display.text! + String(sender.tag - 1000)
         }
         else{
-        }
+            if decimalNumber == false {
+                display.text = display.text! + ".";
+                decimalNumber = true;
+            }
+        }*/
     
         numberOnScreen = Double(display.text!)!
         
         
     }
+    
+    @IBAction func dotButton(_ sender: UIButton) {
+        let currentText = self.display.text ?? "0"
+        guard !currentText.contains(".") else {
+            return
+        }
+        self.display.text = currentText + "."
+    }
+    /*
+    @IBAction func dotButtonClicked(_ sender: UIButton) {
+        let currentText = self.displayLabel.text ?? "0"
+        // Append the `.` to the display string only when there's no `.` in the string
+        guard !currentText.contains(".") else {
+            return
+        }
+        // Append and re-assign the string
+        self.displayLabel.text = currentText + "."
+    }*/
     
     @IBAction func equalButton(_ sender: UIButton) {
         if sender.tag == 1200 //equal   Op = 0
@@ -52,10 +82,40 @@ class ViewController: UIViewController {
             }
             else if operation == 4
             {
+                /*if numberOnScreen == 0 {
+                    display.text = "你的數學是體育導師教的嗎？"
+                    stupid = true;
+                }
+                else {
+                    display.text = String(previousNumber / numberOnScreen)
+                }*/
                 display.text = String(previousNumber / numberOnScreen)
             }
             operation = 0;
+            
+            //if here is an integer;
+            /*
+            if Double(display.text!)! == floor(Double(display.text!)!) {
+                decimalNumber = false
+                display.text = String(Int(display.text!)!)
+                
+            }
+            else {
+                decimalNumber = true;
+                numberOnScreen = Double(display.text!)!;
+            }*/
+            /*if stupid == false {
+                numberOnScreen = Double(display.text!)!;
+            }
+            else{
+                numberOnScreen = 0;
+                previousNumber = 0;
+                performingMath = false;
+                operation = 0;
+                stupid = false;
+            }*/
             numberOnScreen = Double(display.text!)!;
+
             previousNumber = 0;
         }
     }
@@ -106,13 +166,32 @@ class ViewController: UIViewController {
         performingMath = true;//要求接下來輸入數字
 
     }
-    
+
+    //Delete is not finish yet.
     @IBAction func clearButton(_ sender: UIButton) {
+        
         if sender.tag == 2000 //Delete
         {
+            //no signal and not empty
+            if performingMath == false && display.text != "" {
+                display.text = String(describing: display.text?.characters.dropLast())  // delete a character
+                
+                if display.text == "" {
+                    numberOnScreen = 0;
+                }
+                else{
+                    numberOnScreen = Double(display.text!)!;
+                }
+                
+            }
         }
         else if sender.tag == 2001 //Clear
         {
+            display.text = ""
+            numberOnScreen = 0;
+            previousNumber = 0;
+            performingMath = false;
+            operation = 0;
         }
     }
     
