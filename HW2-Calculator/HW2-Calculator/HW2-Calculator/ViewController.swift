@@ -54,16 +54,6 @@ class ViewController: UIViewController {
         }
         self.display.text = currentText + "."
     }
-    /*
-    @IBAction func dotButtonClicked(_ sender: UIButton) {
-        let currentText = self.displayLabel.text ?? "0"
-        // Append the `.` to the display string only when there's no `.` in the string
-        guard !currentText.contains(".") else {
-            return
-        }
-        // Append and re-assign the string
-        self.displayLabel.text = currentText + "."
-    }*/
     
     @IBAction func equalButton(_ sender: UIButton) {
         if sender.tag == 1200 //equal   Op = 0
@@ -192,17 +182,21 @@ class ViewController: UIViewController {
         {
             //no signal and not empty
             if performingMath == false && display.text != "" {
-                display.text = String(describing: display.text?.characters.dropLast())  // delete a character
+                var temp = String(describing: display.text)
+                temp = String(temp.characters.dropLast())
+                
+                //display.text = String(display.text.characters.dropLast())
+                //display.text = String( display.text.characters.dropLast(1))
+                display.text = temp
             }
             if display.text == "" {
                 numberOnScreen = 0;
             }
             else{
-                numberOnScreen = Double(display.text!)!
-                    //Double(display.text!)!;
+                //numberOnScreen = Double(display.text!)!
             }
-            
         }
+            
         else if sender.tag == 2001 //Clear
         {
             display.text = ""
