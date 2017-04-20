@@ -43,8 +43,6 @@ class ViewController: UIViewController {
         }*/
     
         numberOnScreen = Double(display.text!)!
-        
-        
     }
     
     @IBAction func dotButton(_ sender: UIButton) {
@@ -143,7 +141,6 @@ class ViewController: UIViewController {
         {
             display.text = "÷"
             operation = 4
-            
         }
         else if sender.tag == 1205 //
         {
@@ -155,7 +152,6 @@ class ViewController: UIViewController {
             display.text = "^"
             operation = 6
         }
-        
         previousNumber = numberOnScreen;
         performingMath = true;//要求接下來輸入數字
 
@@ -175,25 +171,19 @@ class ViewController: UIViewController {
     }
     
 
-    //Delete is not finish yet.
     @IBAction func clearButton(_ sender: UIButton) {
         
         if sender.tag == 2000 //Delete
         {
             //no signal and not empty
             if performingMath == false && display.text != "" {
-                var temp = String(describing: display.text)
-                temp = String(temp.characters.dropLast())
-                
-                //display.text = String(display.text.characters.dropLast())
-                //display.text = String( display.text.characters.dropLast(1))
-                display.text = temp
+                display.text = String(display.text!.characters.dropLast())
             }
             if display.text == "" {
                 numberOnScreen = 0;
             }
             else{
-                //numberOnScreen = Double(display.text!)!
+                numberOnScreen = Double(display.text!)!
             }
         }
             
@@ -231,7 +221,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
