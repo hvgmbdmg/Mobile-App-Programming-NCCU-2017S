@@ -91,6 +91,16 @@ class ViewController: UIViewController {
                 }*/
                 display.text = String(previousNumber / numberOnScreen)
             }
+            else if operation == 5
+            {
+                display.text = String(previousNumber.truncatingRemainder(dividingBy: numberOnScreen))
+            }
+            else if operation == 6
+            {
+                display.text = String(pow(previousNumber, numberOnScreen))
+            }
+            
+            
             operation = 0;
             
             //if here is an integer;
@@ -145,27 +155,35 @@ class ViewController: UIViewController {
             operation = 4
             
         }
-        else if sender.tag == 1250 //
+        else if sender.tag == 1205 //
         {
             display.text = "%"
+            operation = 5
         }
-        else if sender.tag == 1251 //
+        else if sender.tag == 1206 //
         {
             display.text = "^"
-        }
-        else if sender.tag == 1252 //
-        {
-            display.text = "√"
-        }
-        else if sender.tag == 1253 //Log
-        {
-            display.text = "log"
+            operation = 6
         }
         
         previousNumber = numberOnScreen;
         performingMath = true;//要求接下來輸入數字
 
     }
+    
+    
+    @IBAction func singleParameter(_ sender: UIButton) {
+        if sender.tag == 1251 //square
+        {
+            display.text = String(sqrt(numberOnScreen))
+        }
+        else if sender.tag == 1252 //log
+        {
+            display.text = String(log(numberOnScreen))
+        }
+        numberOnScreen = Double(display.text!)!;
+    }
+    
 
     //Delete is not finish yet.
     @IBAction func clearButton(_ sender: UIButton) {
@@ -175,15 +193,15 @@ class ViewController: UIViewController {
             //no signal and not empty
             if performingMath == false && display.text != "" {
                 display.text = String(describing: display.text?.characters.dropLast())  // delete a character
-                
-                if display.text == "" {
-                    numberOnScreen = 0;
-                }
-                else{
-                    numberOnScreen = Double(display.text!)!;
-                }
-                
             }
+            if display.text == "" {
+                numberOnScreen = 0;
+            }
+            else{
+                numberOnScreen = Double(display.text!)!
+                    //Double(display.text!)!;
+            }
+            
         }
         else if sender.tag == 2001 //Clear
         {
@@ -200,10 +218,13 @@ class ViewController: UIViewController {
         
         if sender.tag == 1300 //Pi
         {
+            numberOnScreen = Double.pi
         }
         else if sender.tag == 1301 //Natural
         {
+            numberOnScreen = 2.7182818284590452
         }
+        display.text = String(numberOnScreen)
     }
     
 
