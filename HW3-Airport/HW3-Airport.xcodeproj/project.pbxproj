@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE892CB41EDD626800263036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892CB31EDD626800263036 /* AppDelegate.swift */; };
+		FE892CB61EDD626800263036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892CB51EDD626800263036 /* ViewController.swift */; };
+		FE892CB91EDD626900263036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE892CB71EDD626900263036 /* Main.storyboard */; };
+		FE892CBB1EDD626900263036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE892CBA1EDD626900263036 /* Assets.xcassets */; };
+		FE892CBE1EDD626900263036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE892CBC1EDD626900263036 /* LaunchScreen.storyboard */; };
+		FE892CC91EDD626900263036 /* HW3_AirportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892CC81EDD626900263036 /* HW3_AirportTests.swift */; };
+		FE892CD41EDD626900263036 /* HW3_AirportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892CD31EDD626900263036 /* HW3_AirportUITests.swift */; };
+		FE892CE21EDD62E700263036 /* AirportListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892CE11EDD62E700263036 /* AirportListTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE892CC51EDD626900263036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE892CA81EDD626800263036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE892CAF1EDD626800263036;
+			remoteInfo = "HW3-Airport";
+		};
+		FE892CD01EDD626900263036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE892CA81EDD626800263036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE892CAF1EDD626800263036;
+			remoteInfo = "HW3-Airport";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE892CB01EDD626800263036 /* HW3-Airport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW3-Airport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE892CB31EDD626800263036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE892CB51EDD626800263036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FE892CB81EDD626900263036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE892CBA1EDD626900263036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE892CBD1EDD626900263036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE892CBF1EDD626900263036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE892CC41EDD626900263036 /* HW3-AirportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW3-AirportTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE892CC81EDD626900263036 /* HW3_AirportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW3_AirportTests.swift; sourceTree = "<group>"; };
+		FE892CCA1EDD626900263036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE892CCF1EDD626900263036 /* HW3-AirportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW3-AirportUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE892CD31EDD626900263036 /* HW3_AirportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW3_AirportUITests.swift; sourceTree = "<group>"; };
+		FE892CD51EDD626900263036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE892CE11EDD62E700263036 /* AirportListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportListTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE892CAD1EDD626800263036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CC11EDD626900263036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CCC1EDD626900263036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE892CA71EDD626800263036 = {
+			isa = PBXGroup;
+			children = (
+				FE892CB21EDD626800263036 /* HW3-Airport */,
+				FE892CC71EDD626900263036 /* HW3-AirportTests */,
+				FE892CD21EDD626900263036 /* HW3-AirportUITests */,
+				FE892CB11EDD626800263036 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE892CB11EDD626800263036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE892CB01EDD626800263036 /* HW3-Airport.app */,
+				FE892CC41EDD626900263036 /* HW3-AirportTests.xctest */,
+				FE892CCF1EDD626900263036 /* HW3-AirportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE892CB21EDD626800263036 /* HW3-Airport */ = {
+			isa = PBXGroup;
+			children = (
+				FE892CB31EDD626800263036 /* AppDelegate.swift */,
+				FE892CB51EDD626800263036 /* ViewController.swift */,
+				FE892CB71EDD626900263036 /* Main.storyboard */,
+				FE892CBA1EDD626900263036 /* Assets.xcassets */,
+				FE892CBC1EDD626900263036 /* LaunchScreen.storyboard */,
+				FE892CBF1EDD626900263036 /* Info.plist */,
+				FE892CE11EDD62E700263036 /* AirportListTableViewController.swift */,
+			);
+			path = "HW3-Airport";
+			sourceTree = "<group>";
+		};
+		FE892CC71EDD626900263036 /* HW3-AirportTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE892CC81EDD626900263036 /* HW3_AirportTests.swift */,
+				FE892CCA1EDD626900263036 /* Info.plist */,
+			);
+			path = "HW3-AirportTests";
+			sourceTree = "<group>";
+		};
+		FE892CD21EDD626900263036 /* HW3-AirportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE892CD31EDD626900263036 /* HW3_AirportUITests.swift */,
+				FE892CD51EDD626900263036 /* Info.plist */,
+			);
+			path = "HW3-AirportUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE892CAF1EDD626800263036 /* HW3-Airport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE892CD81EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-Airport" */;
+			buildPhases = (
+				FE892CAC1EDD626800263036 /* Sources */,
+				FE892CAD1EDD626800263036 /* Frameworks */,
+				FE892CAE1EDD626800263036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HW3-Airport";
+			productName = "HW3-Airport";
+			productReference = FE892CB01EDD626800263036 /* HW3-Airport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE892CC31EDD626900263036 /* HW3-AirportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE892CDB1EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-AirportTests" */;
+			buildPhases = (
+				FE892CC01EDD626900263036 /* Sources */,
+				FE892CC11EDD626900263036 /* Frameworks */,
+				FE892CC21EDD626900263036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE892CC61EDD626900263036 /* PBXTargetDependency */,
+			);
+			name = "HW3-AirportTests";
+			productName = "HW3-AirportTests";
+			productReference = FE892CC41EDD626900263036 /* HW3-AirportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE892CCE1EDD626900263036 /* HW3-AirportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE892CDE1EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-AirportUITests" */;
+			buildPhases = (
+				FE892CCB1EDD626900263036 /* Sources */,
+				FE892CCC1EDD626900263036 /* Frameworks */,
+				FE892CCD1EDD626900263036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE892CD11EDD626900263036 /* PBXTargetDependency */,
+			);
+			name = "HW3-AirportUITests";
+			productName = "HW3-AirportUITests";
+			productReference = FE892CCF1EDD626900263036 /* HW3-AirportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE892CA81EDD626800263036 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "yc-shen";
+				TargetAttributes = {
+					FE892CAF1EDD626800263036 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					FE892CC31EDD626900263036 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE892CAF1EDD626800263036;
+					};
+					FE892CCE1EDD626900263036 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FE892CAF1EDD626800263036;
+					};
+				};
+			};
+			buildConfigurationList = FE892CAB1EDD626800263036 /* Build configuration list for PBXProject "HW3-Airport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE892CA71EDD626800263036;
+			productRefGroup = FE892CB11EDD626800263036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE892CAF1EDD626800263036 /* HW3-Airport */,
+				FE892CC31EDD626900263036 /* HW3-AirportTests */,
+				FE892CCE1EDD626900263036 /* HW3-AirportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE892CAE1EDD626800263036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE892CBE1EDD626900263036 /* LaunchScreen.storyboard in Resources */,
+				FE892CBB1EDD626900263036 /* Assets.xcassets in Resources */,
+				FE892CB91EDD626900263036 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CC21EDD626900263036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CCD1EDD626900263036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE892CAC1EDD626800263036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE892CE21EDD62E700263036 /* AirportListTableViewController.swift in Sources */,
+				FE892CB61EDD626800263036 /* ViewController.swift in Sources */,
+				FE892CB41EDD626800263036 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CC01EDD626900263036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE892CC91EDD626900263036 /* HW3_AirportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE892CCB1EDD626900263036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE892CD41EDD626900263036 /* HW3_AirportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE892CC61EDD626900263036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE892CAF1EDD626800263036 /* HW3-Airport */;
+			targetProxy = FE892CC51EDD626900263036 /* PBXContainerItemProxy */;
+		};
+		FE892CD11EDD626900263036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE892CAF1EDD626800263036 /* HW3-Airport */;
+			targetProxy = FE892CD01EDD626900263036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE892CB71EDD626900263036 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE892CB81EDD626900263036 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE892CBC1EDD626900263036 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE892CBD1EDD626900263036 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE892CD61EDD626900263036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE892CD71EDD626900263036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE892CD91EDD626900263036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HW3-Airport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-Airport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FE892CDA1EDD626900263036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HW3-Airport/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-Airport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FE892CDC1EDD626900263036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HW3-AirportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-AirportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW3-Airport.app/HW3-Airport";
+			};
+			name = Debug;
+		};
+		FE892CDD1EDD626900263036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "HW3-AirportTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-AirportTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW3-Airport.app/HW3-Airport";
+			};
+			name = Release;
+		};
+		FE892CDF1EDD626900263036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "HW3-AirportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-AirportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "HW3-Airport";
+			};
+			name = Debug;
+		};
+		FE892CE01EDD626900263036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "HW3-AirportUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appcoda.HW3-AirportUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "HW3-Airport";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE892CAB1EDD626800263036 /* Build configuration list for PBXProject "HW3-Airport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE892CD61EDD626900263036 /* Debug */,
+				FE892CD71EDD626900263036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE892CD81EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-Airport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE892CD91EDD626900263036 /* Debug */,
+				FE892CDA1EDD626900263036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE892CDB1EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-AirportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE892CDC1EDD626900263036 /* Debug */,
+				FE892CDD1EDD626900263036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE892CDE1EDD626900263036 /* Build configuration list for PBXNativeTarget "HW3-AirportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE892CDF1EDD626900263036 /* Debug */,
+				FE892CE01EDD626900263036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE892CA81EDD626800263036 /* Project object */;
+}

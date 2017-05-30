@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1B40971EDD908D00D7EF05 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B40961EDD908D00D7EF05 /* AirportTableViewCell.swift */; };
+		FE1B40991EDDB5B900D7EF05 /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B40981EDDB5B900D7EF05 /* AirportDetailViewController.swift */; };
 		FE892B7E1ED3E4B000263036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892B7D1ED3E4B000263036 /* AppDelegate.swift */; };
 		FE892B801ED3E4B000263036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892B7F1ED3E4B000263036 /* ViewController.swift */; };
 		FE892B831ED3E4B000263036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE892B811ED3E4B000263036 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		FE892B881ED3E4B000263036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE892B861ED3E4B000263036 /* LaunchScreen.storyboard */; };
 		FE892B931ED3E4B100263036 /* SimpleTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892B921ED3E4B100263036 /* SimpleTableTests.swift */; };
 		FE892B9E1ED3E4B100263036 /* SimpleTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892B9D1ED3E4B100263036 /* SimpleTableUITests.swift */; };
+		FE892CE41EDD652300263036 /* airports.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE892CE31EDD652300263036 /* airports.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE1B40961EDD908D00D7EF05 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
+		FE1B40981EDDB5B900D7EF05 /* AirportDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
 		FE892B7A1ED3E4B000263036 /* SimpleTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892B7D1ED3E4B000263036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE892B7F1ED3E4B000263036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		FE892B991ED3E4B100263036 /* SimpleTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892B9D1ED3E4B100263036 /* SimpleTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableUITests.swift; sourceTree = "<group>"; };
 		FE892B9F1ED3E4B100263036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE892CE31EDD652300263036 /* airports.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = airports.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,15 @@
 		FE892B7C1ED3E4B000263036 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				FE892CE31EDD652300263036 /* airports.plist */,
 				FE892B7D1ED3E4B000263036 /* AppDelegate.swift */,
 				FE892B7F1ED3E4B000263036 /* ViewController.swift */,
 				FE892B811ED3E4B000263036 /* Main.storyboard */,
 				FE892B841ED3E4B000263036 /* Assets.xcassets */,
 				FE892B861ED3E4B000263036 /* LaunchScreen.storyboard */,
 				FE892B891ED3E4B000263036 /* Info.plist */,
+				FE1B40961EDD908D00D7EF05 /* AirportTableViewCell.swift */,
+				FE1B40981EDDB5B900D7EF05 /* AirportDetailViewController.swift */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -232,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE892CE41EDD652300263036 /* airports.plist in Resources */,
 				FE892B881ED3E4B000263036 /* LaunchScreen.storyboard in Resources */,
 				FE892B851ED3E4B000263036 /* Assets.xcassets in Resources */,
 				FE892B831ED3E4B000263036 /* Main.storyboard in Resources */,
@@ -260,7 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE892B801ED3E4B000263036 /* ViewController.swift in Sources */,
+				FE1B40991EDDB5B900D7EF05 /* AirportDetailViewController.swift in Sources */,
 				FE892B7E1ED3E4B000263036 /* AppDelegate.swift in Sources */,
+				FE1B40971EDD908D00D7EF05 /* AirportTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				FE892BA41ED3E4B100263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE892BA51ED3E4B100263036 /* Build configuration list for PBXNativeTarget "SimpleTableTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				FE892BA71ED3E4B100263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE892BA81ED3E4B100263036 /* Build configuration list for PBXNativeTarget "SimpleTableUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				FE892BAA1ED3E4B100263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

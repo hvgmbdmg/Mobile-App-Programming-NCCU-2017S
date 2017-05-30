@@ -9,28 +9,40 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "Petite Oyster", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "HHH", "III", "JJJ", "KKK", "LLL", "MMM", "NNN", "OOO", "PPP"]
+    var isLoadData: Bool = false;
+    var airportsData = [[String]]();
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantNames.count
+    @IBOutlet weak var tableView: UITableView!
+    
+    //var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "Petite Oyster", "AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "HHH", "III", "JJJ", "KKK", "LLL", "MMM", "NNN", "OOO", "PPP"]
+    
+    func tableView(_ tableiew: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return airportsData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cellIdentifier = "AirportCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AirportTableViewCell
+        
+        
         
         //set cell
-        cell.textLabel?.text = restaurantNames[indexPath.row]
-        
-        let diceRoll = Int(arc4random_uniform(6) + 1)
-        if( diceRoll%2 == 0 ){
-            cell.imageView?.image = UIImage(named: "picTwo")
+        /*
+        var myDict: NSDictionary
+        if let path = Bundle.main.path(forResource: "airports", ofType: "plist") {
+            myDict = NSDictionary(contentsOfFile: path)!
         }
-        else{
-            cell.imageView?.image = UIImage(named: "picOne")
-        }
+        print(myDict)
+*/
         
+        cell.FullName.text = airportsData[indexPath.row][0]
+        //
+        cell.IATA.text = airportsData[indexPath.row][2]
+        cell.City.text = airportsData[indexPath.row][3]
+
+
+        //cell.textLabel?.text = airportsData[indexPath.row][0]
+        //cell.imageView?.image = UIImage(named: "picOne")
         
         return cell;
     }
@@ -42,6 +54,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let filepath = Bundle.main.path(forResource: "airports", ofType: "plist")
+        
+        let airportList = NSArray(contentsOfFile: filepath!) as! [[String:AnyObject]]
+        
+        for airport in airportList{
+            //print(airport["Airport"]!)
+            //print(airport["Country"]!)
+            //print(airport["IATA"]!)
+            //print(airport["ServedCity"]!)
+            
+            airportsData.append([airport["Airport"] as! String, airport["Country"] as! String, airport["IATA"] as! String, airport["ServedCity"] as! String])
+        
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +75,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showAirportDetail" {
+            if let IndexPath = tableView.indexPathForSelectedRow {
+                let destViewController = segue.destination as! AirportDetailViewController;
+                destViewController.IATADetail.text = airportsData[IndexPath.row][2];
+            }
+            //var selectedIndex = UITableView.indexPathForCell(sender as! UITableViewCell)
+            //indexOfSelectedPerson(sender as! UITableView)
+            //UITableView.indexPathForRow(sender)
+            
+            //var destViewController = segue.destination as! AirportDetailViewController;
+            //destViewController.IATADetail = airportsData[selectedIndex][2];
+            //if let IndexPath =
+        }
+    }
 
 
 }
