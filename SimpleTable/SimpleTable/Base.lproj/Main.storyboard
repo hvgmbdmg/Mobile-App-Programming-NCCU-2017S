@@ -60,7 +60,7 @@
                                             <outlet property="City" destination="kXN-hV-kR5" id="nxt-6z-ZNp"/>
                                             <outlet property="FullName" destination="w8C-Q8-aiu" id="rdh-oU-rOK"/>
                                             <outlet property="IATA" destination="woT-Zm-w3f" id="DLr-WP-tar"/>
-                                            <segue destination="lgS-BX-6X2" kind="show" id="Hb0-bb-neO"/>
+                                            <segue destination="lgS-BX-6X2" kind="show" identifier="showAirportDetail" id="Hb0-bb-neO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -106,7 +106,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDr-me-DM1">
-                                <rect key="frame" x="166" y="43" width="42" height="21"/>
+                                <rect key="frame" x="166" y="87" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

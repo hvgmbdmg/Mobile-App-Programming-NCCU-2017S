@@ -11,12 +11,18 @@ import UIKit
 class AirportDetailViewController: UIViewController {
 
     @IBOutlet weak var AirportImage: UIImageView!
-    
     @IBOutlet weak var IATADetail: UILabel!
+    
+    var ImageName = ""
+    var IATAText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("why")
         //IATADetail.text =
+        print(AirportImage.image = UIImage(named: ImageName))
+        //IATADetail.text =
+        //destViewController.AirportImage?.image = UIImage(named: "ATL.jpg")
 
         // Do any additional setup after loading the view.
     }

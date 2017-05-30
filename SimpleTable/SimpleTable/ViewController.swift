@@ -76,10 +76,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("do prepare")
         if segue.identifier == "showAirportDetail" {
             if let IndexPath = tableView.indexPathForSelectedRow {
                 let destViewController = segue.destination as! AirportDetailViewController;
-                destViewController.IATADetail.text = airportsData[IndexPath.row][2];
+                //let AAA: String = airportsData[IndexPath.row][2]
+                print(airportsData[IndexPath.row][2])
+                destViewController.ImageName = airportsData[IndexPath.row][2];
+                
+                
+                
+                //destViewController.AirportImage.image = UIImage(named: airportsData[IndexPath.row][2]+".jpg")                    //String(airportsData[IndexPath.row][2])
+                //destViewController.AirportImage?.image = UIImage(named: "ATL.jpg")
+                //destViewController.IATADetail.text = String(airportsData[IndexPath.row][2]);
+                //print("index path: " + String(IndexPath.row));
+                //print(String(airportsData[IndexPath.row][2]));
             }
             //var selectedIndex = UITableView.indexPathForCell(sender as! UITableViewCell)
             //indexOfSelectedPerson(sender as! UITableView)
