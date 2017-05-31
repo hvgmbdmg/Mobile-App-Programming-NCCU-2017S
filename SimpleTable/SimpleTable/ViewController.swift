@@ -24,19 +24,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cellIdentifier = "AirportCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AirportTableViewCell
         
-        
-        
         //set cell
-        /*
-        var myDict: NSDictionary
-        if let path = Bundle.main.path(forResource: "airports", ofType: "plist") {
-            myDict = NSDictionary(contentsOfFile: path)!
-        }
-        print(myDict)
-*/
+
         
         cell.FullName.text = airportsData[indexPath.row][0]
-        //
+
         cell.IATA.text = airportsData[indexPath.row][2]
         cell.City.text = airportsData[indexPath.row][3]
 
@@ -76,29 +68,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("do prepare")
+        //print("do prepare")
         if segue.identifier == "showAirportDetail" {
             if let IndexPath = tableView.indexPathForSelectedRow {
                 let destViewController = segue.destination as! AirportDetailViewController;
                 //let AAA: String = airportsData[IndexPath.row][2]
                 print(airportsData[IndexPath.row][2])
-                destViewController.ImageName = airportsData[IndexPath.row][2];
+                destViewController.airportImageName = airportsData[IndexPath.row][2];
+                destViewController.FullNameText = airportsData[IndexPath.row][0]
+                destViewController.CityText = airportsData[IndexPath.row][3]
+                destViewController.CountryText = airportsData[IndexPath.row][1]
                 
                 
-                
-                //destViewController.AirportImage.image = UIImage(named: airportsData[IndexPath.row][2]+".jpg")                    //String(airportsData[IndexPath.row][2])
-                //destViewController.AirportImage?.image = UIImage(named: "ATL.jpg")
-                //destViewController.IATADetail.text = String(airportsData[IndexPath.row][2]);
-                //print("index path: " + String(IndexPath.row));
-                //print(String(airportsData[IndexPath.row][2]));
+
             }
-            //var selectedIndex = UITableView.indexPathForCell(sender as! UITableViewCell)
-            //indexOfSelectedPerson(sender as! UITableView)
-            //UITableView.indexPathForRow(sender)
-            
-            //var destViewController = segue.destination as! AirportDetailViewController;
-            //destViewController.IATADetail = airportsData[selectedIndex][2];
-            //if let IndexPath =
         }
     }
 
