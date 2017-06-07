@@ -11,6 +11,9 @@ import UIKit
 class DataViewController: UIViewController {
     
     var fontSize:Double = 24.0
+    
+    //var textOneLineLength = 15
+    //var textPageLineNumber = 23
 
     @IBOutlet weak var textLabel: UILabel!
     
@@ -33,6 +36,34 @@ class DataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //print("========================")
+        //print(textLabel.preferredMaxLayoutWidth)
+        //print(textLabel.widthAnchor)
+        //print(textLabel.numberOfLines)//this is text line number.
+        //print(textLabel.sizeToFit())
+        //print("========================")
+        
+        
+        /*
+        
+        var fullName = ModelController.pageData[0]
+        var fullNameArr = fullName.characters.split{$0 == "\n"}.map(String.init)
+        // or simply:
+        // let fullNameArr = fullName.characters.split{" "}.map(String.init)
+        
+        //fullNameArr[0] // First
+        //fullNameArr[1] // Last
+        
+        for i in 0...10{
+            print("$$$$$$$$$$")
+            print(fullNameArr[i])
+            print(fullNameArr[i].characters.count)
+            //print(textLabel.sizeToFit(fullNameArr[i]))
+            //print(ModelController.pageData)
+            
+            
+        }*/
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

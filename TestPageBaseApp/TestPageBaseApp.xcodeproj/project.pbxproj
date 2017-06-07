@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE251A681EE78B130069D8A6 /* 狼與辛香料第一集片段.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE251A671EE78B130069D8A6 /* 狼與辛香料第一集片段.txt */; };
 		FE892C2E1ED51C6A00263036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892C2D1ED51C6A00263036 /* AppDelegate.swift */; };
 		FE892C301ED51C6A00263036 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892C2F1ED51C6A00263036 /* RootViewController.swift */; };
 		FE892C321ED51C6A00263036 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE892C311ED51C6A00263036 /* DataViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE251A671EE78B130069D8A6 /* 狼與辛香料第一集片段.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "狼與辛香料第一集片段.txt"; sourceTree = "<group>"; };
 		FE892C2A1ED51C6A00263036 /* TestPageBaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPageBaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE892C2D1ED51C6A00263036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE892C2F1ED51C6A00263036 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				FE892C351ED51C6A00263036 /* Main.storyboard */,
 				FE892C381ED51C6A00263036 /* Assets.xcassets */,
 				FE892C3A1ED51C6A00263036 /* LaunchScreen.storyboard */,
+				FE251A671EE78B130069D8A6 /* 狼與辛香料第一集片段.txt */,
 				FE892C3D1ED51C6A00263036 /* Info.plist */,
 			);
 			path = TestPageBaseApp;
@@ -240,6 +243,7 @@
 			files = (
 				FE892C3C1ED51C6A00263036 /* LaunchScreen.storyboard in Resources */,
 				FE892C391ED51C6A00263036 /* Assets.xcassets in Resources */,
+				FE251A681EE78B130069D8A6 /* 狼與辛香料第一集片段.txt in Resources */,
 				FE892C371ED51C6A00263036 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +517,7 @@
 				FE892C581ED51C6A00263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE892C591ED51C6A00263036 /* Build configuration list for PBXNativeTarget "TestPageBaseAppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				FE892C5B1ED51C6A00263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE892C5C1ED51C6A00263036 /* Build configuration list for PBXNativeTarget "TestPageBaseAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				FE892C5E1ED51C6A00263036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
