@@ -14,6 +14,10 @@ class DataViewController: UIViewController {
     
     //var textOneLineLength = 15
     //var textPageLineNumber = 23
+    
+    @IBOutlet weak var additionalView: UIView!
+    @IBOutlet weak var button1: UIButton!   //not used
+    @IBOutlet weak var button2: UIButton!   //not used
 
     @IBOutlet weak var textLabel: UILabel!
     
@@ -23,7 +27,14 @@ class DataViewController: UIViewController {
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
     var textObject: String = ""
+    var additionalIsHidden: Bool = true
 
+    @IBAction func editButton(_ sender: Any) {
+        self.additionalView.isHidden = !additionalIsHidden
+        //self.button1.isHidden = !additionalIsHidden
+        additionalIsHidden = !additionalIsHidden
+    }
+    
     @IBAction func smallButton(_ sender: Any) {
         //self.textLabel.sizeThatFits(self.textLabel.font)
         
