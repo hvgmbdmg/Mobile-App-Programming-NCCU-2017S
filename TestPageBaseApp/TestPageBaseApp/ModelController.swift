@@ -108,6 +108,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
+        print("AT index")
         // Return the data view controller for the given index.
         if (pageData.count == 0) || (index >= pageData.count) {
             return nil
@@ -121,6 +122,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func indexOfViewController(_ viewController: DataViewController) -> Int {
+        print("call indexOfViewController")
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
         return pageData.index(of: viewController.textObject) ?? NSNotFound
@@ -129,16 +131,19 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        print("Turn Left");
         var index = self.indexOfViewController(viewController as! DataViewController)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
         
         index -= 1
+        print("work?");
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        print("Turn Right");
         var index = self.indexOfViewController(viewController as! DataViewController)
         if index == NSNotFound {
             return nil
