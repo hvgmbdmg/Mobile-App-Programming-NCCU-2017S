@@ -181,7 +181,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
     
     public func doSomething(){
-        print("QQ")
+        //print("QQ")
         if( ViewController.isBig ){//small to big
             ModelController.bigIndex = ModelController.smallIndex*ModelController.pageData.count/ModelController.smallPageData.count
             ViewController.changeSizeText = ModelController.pageData[ModelController.bigIndex]
@@ -197,7 +197,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> ViewController? {
         // Return the data view controller for the given index.
-        print("AT index")
+        //print("AT index")
         if( ViewController.isBig ){
             if (ModelController.pageData.count == 0) || (index >= ModelController.pageData.count) {
                 return nil
@@ -225,7 +225,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     func indexOfViewController(_ viewController: ViewController) -> Int {
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-        print("index of")
+        //print("index of")
         if( ViewController.isBig ){
             return ModelController.pageData.index(of: viewController.textObject) ?? NSNotFound
         }
@@ -245,8 +245,12 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
         
         index -= 1
-        ModelController.bigIndex = index
-        ModelController.smallIndex = index
+        if( ViewController.isBig ){
+            ModelController.bigIndex = index
+        }
+        else{
+            ModelController.smallIndex = index
+        }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
 
     }
@@ -254,7 +258,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     
     //Turn Right
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        print("Turn Right")
+        //print("Turn Right")
         if( ViewController.isBig ){
             var index = self.indexOfViewController(viewController as! ViewController)
             if index == NSNotFound {
@@ -270,17 +274,17 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
             if index == ModelController.pageData.count {
                     return nil
             }
-            print("Turn Right??")
+            //print("Turn Right??")
             return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
         }
         else{
             var index = self.indexOfViewController(viewController as! ViewController)
             if index == NSNotFound {
-                print("HERE!!!")
+                //print("HERE!!!")
                 index = ModelController.smallIndex
                 //return nil
             }
-            print("Where")
+            //print("Where")
             index += 1
             
             ModelController.smallIndex = index;
@@ -290,7 +294,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
             if index == ModelController.smallPageData.count {
                 return nil
             }
-            print("Turn Right?")
+            //print("Turn Right?")
             return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
         }
         //print("Turn Right End")

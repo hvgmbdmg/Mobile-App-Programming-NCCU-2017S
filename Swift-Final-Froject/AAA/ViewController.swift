@@ -77,6 +77,16 @@ class ViewController: UIViewController ,UITextFieldDelegate{
     }
     //字型
     @IBOutlet weak var fontAthelasOutlet: UIButton!
+    @IBAction func editButton(_ sender: Any) {
+        if(editVeiw.isHidden){
+            editVeiw.isHidden = false
+            hideEditBtnOutlet.isHidden = false
+        }else{
+            editVeiw.isHidden = true
+            hideEditBtnOutlet.isHidden = true
+        }
+        
+    }
     
     @IBOutlet weak var fontCharterOutlet: UIButton!
     
@@ -111,16 +121,7 @@ class ViewController: UIViewController ,UITextFieldDelegate{
         ViewController.fontType = "Times New Roman"
         self.updateUIElements()
     }
-    //編輯按鈕
-    @IBAction func editBtn(_ sender: Any){
-        if(editVeiw.isHidden){
-            editVeiw.isHidden = false
-            hideEditBtnOutlet.isHidden = false
-        }else{
-            editVeiw.isHidden = true
-            hideEditBtnOutlet.isHidden = true
-        }
-    }
+
     
     //背景色
     @IBAction func BackgroundWhite(_ sender: Any) {
@@ -145,11 +146,11 @@ class ViewController: UIViewController ,UITextFieldDelegate{
         textContent.font = UIFont(name: (textContent.font?.fontName)!,size: CGFloat(ViewController.fontSize))
         //ModelController
         if( ViewController.isBig == false ){
-            ViewController.isBig = false
+            ViewController.isBig = true
             ModelController().doSomething();
             self.textContent.text = ViewController.changeSizeText
         }
-        ViewController.isBig = true
+        //ViewController.isBig = true
     }
     
     

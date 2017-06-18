@@ -296,17 +296,9 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdR-A8-sjO">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" id="yId-WW-JfL">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eLp-cT-bJV">
-                                            <rect key="frame" x="16" y="2" width="68" height="41"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button" image="font"/>
-                                            <connections>
-                                                <action selector="editBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nR-W5-9Sw"/>
-                                            </connections>
-                                        </button>
+                                    <barButtonItem style="plain" systemItem="edit" id="yId-WW-JfL">
                                         <connections>
-                                            <action selector="editBtn" destination="BYZ-38-t0r" id="wm8-Lx-W76"/>
+                                            <action selector="editButton:" destination="BYZ-38-t0r" id="fzn-DD-MCR"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -432,7 +424,4 @@
             <point key="canvasLocation" x="181.59999999999999" y="111.99400299850076"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="font" width="59" height="41"/>
-    </resources>
 </document>
